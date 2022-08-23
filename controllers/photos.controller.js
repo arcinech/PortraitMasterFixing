@@ -8,7 +8,7 @@ const validateEmail = require('../utils/validateEmail');
 
 exports.add = async (req, res) => {
   try {
-    let { title, author, email } = req.fields;
+    const { title, author, email } = req.fields;
     const file = req.files.file;
 
     if (
